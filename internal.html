@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Toothday | Wu</title>
+	<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/main2.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="lightbox2-dev/src/css/lightbox.css" rel="stylesheet"/>
+</head>
+
+
+<body id="all">
+	<div id="contain">
+					<nav id="nav">
+						<a href="coffee.html" class="icon solid fa-home"><span>Home</span></a>
+						<a href="http://cs-people.bu.edu/lwy9/cs103/lab7/part2/#work" class="icon solid fa-map-marked-alt"><span>Cafes</span></a>
+						<a href="http://cs-people.bu.edu/lwy9/cs103/lab7/part2/#contact" class="icon solid fa-id-badge"><span>Me</span></a>
+						<a href="https://www.instagram.com/9l3ix" class="icon brands fa-instagram"><span>Instagram</span></a>
+					</nav>
+
+			<div id="wrap">
+			<article class="panel">
+			<header>
+			<h1 id="page-title"> Toothday: A Review </h1>
+			</header>
+			
+			<section class= "container-fluid">
+			<!-- div for images in the lightbox gallery -->
+				<div class="row">
+			
+				<div class="col-12 ">
+ 					<div class="column" id="item-1">
+   		 				<a href="toothpic/1.jpg" data-lightbox="roadtrip"><img src="toothpic/1.jpg" onclick="openModal();currentSlide(1)" class="image fit" alt="The Garden"></a>
+ 			 		</div>	
+ 			 	</div>
+ 			 	
+ 					
+ 				<div class="col-6">
+  					<div class="column" id="item-3">
+  						 <a href="toothpic/3.jpg" data-lightbox="roadtrip"><img src="toothpic/3.jpg" onclick="openModal();currentSlide(3)" class="image fit" alt="Beware Sticker"></a>
+ 		 			</div>
+ 		 		</div>
+ 		 			
+ 		 		<div class="col-3 ">
+ 		 			<div class="column" id="item-2">
+   					 	<a href="toothpic/2.jpg" data-lightbox="roadtrip"><img src="toothpic/2.jpg" onclick="openModal();currentSlide(2)" class="image fit" alt="Cafe Dogs"></a>
+ 					</div>
+ 				</div>
+ 		 			
+ 		 		<div class="col-3">
+  					<div class="column" id="item-4">
+  	 	 				<a href="toothpic/4.jpg" data-lightbox="roadtrip"><img src="toothpic/4.jpg" onclick="openModal();currentSlide(4)" class="image fit" alt="Dessert"></a>
+ 					</div>
+ 				</div>
+
+				 <div class="col-12">
+					<p> 
+						If you happen to be a dog person and plant lover, <u>Toothday is your top cafe choice in Kaohsiung.</u> <br>
+					
+						<br>Don't be scared of the <strong>"beware of dog"</strong> stickers because, like a hero and his sidekick, the dogs are here to save the day. By this, I mean that they entertain you while you sip away at your coffee. What distinguishes this cafe from the rest is its tiny picturesque garden right outside the window. With our eyes stuck to the screen, the green plants work their magic and relax your built-up eyestrain—the perfect spot to physically and mentally unwind.<br> 
+		
+						<br>Toothday has a carefully selected specialty coffee for you to enjoy, but I <em>highly recommend<em> you try out their homemade desserts.  Although served in a petite portion, its well-balanced sweet and savory will satisfy all your cravings. 
+		
+						</p>
+
+				 </div>
+
+				 <div class="col-6">
+					<div class="info-box">
+						<h3> Find out more about this cafe!  </h3>
+						<ul>
+						<li> <a href="https://www.instagram.com/toothdaystudio/"> Instagram </a></li>
+						<li> <a href="https://m.facebook.com/toothdaystudio/"> Facebook </a> </li>
+						<li> <strong>Location:</strong> No. 21, Lane 198, Linsenyi Road, Xinxing District, Kaohsiung City, 800 </li>
+						<li> <strong>Hours</strong> 13:00-18:00 | Close on Wed </li>
+						</ul>
+					</div>
+
+				 </div>
+
+				 <div class="col-6">
+					 <!-- Map goes here, it should be side by side with the info box.-->
+					<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=No.%2021,%20Lane%20198,%20Linsenyi%20Road,%20Xinxing%20District,%20Kaohsiung%20City,%20800%20&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+					<a href="https://fmovies2.org"></a>
+				 </div>
+ 	
+					
+				</div>
+			</section>
+	
+
+			</article>
+
+	
+	</div>
+	
+	</div>
+
+	<!-- <i class="fas fa-moon"></i> -->
+
+	<div id="dark-button">
+		<button id="darkmode" onclick="turnOnDarkMode()"> Dark Mode</button>
+	</div>
+
+	<div id="light-button">
+		<button id="lightmode" onclick="turnOnLightMode()"> Light Mode</button>
+	</div>
+	
+	<!-- Footer -->
+	<div id="footer">
+        <ul class="copyright">
+            <li>Leix Wu, Nat Mak, Wayne Lin &copy; 2021. All Rights Reserved.</li>
+            <li>Design: <a class="footer-link" href="http://html5up.net">HTML5 UP</a></li>
+            <li><a class="footer-link" href="credits.html">Credits</a></li>
+        </ul>
+    </div>
+
+	<script src="lightbox2-dev/dist/js/lightbox-plus-jquery.js"></script>
+	<script>
+		function turnOnDarkMode()
+		{
+			document.getElementById("all").style.background = "#121212";
+			document.getElementById("all").style.color = "white";
+			document.getElementById("page-title").style.color = "white";
+			document.getElementById("footer").style.color = "white";
+			var surface = document.getElementsByClassName("panel");
+			surface[0].style.background = "#1F1B24";
+			var footerLink = document.getElementsByClassName("footer-link");
+			footerLink[0].style.color = "white";
+			footerLink[1].style.color = "white";
+			document.getElementById("dark-button").style.display = "none";
+			document.getElementById("light-button").style.display = "block";
+		}
+
+		function turnOnLightMode()
+		{
+			document.getElementById("all").style.background = "#CCCC66";
+			document.getElementById("all").style.color = "#777777";
+			document.getElementById("page-title").style.color = "#363636";
+			document.getElementById("footer").style.color = "#073B4C";
+			var surface = document.getElementsByClassName("panel");
+			surface[0].style.background = "white";
+			var footerLink = document.getElementsByClassName("footer-link");
+			footerLink[0].style.color = "#073B4C";
+			footerLink[1].style.color = "#073B4C";
+			document.getElementById("light-button").style.display = "none";
+			document.getElementById("dark-button").style.display = "block";
+		}
+
+	</script>
+	
+</body>
+
+</html>
+
